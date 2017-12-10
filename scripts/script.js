@@ -29,6 +29,40 @@ function exitOutfitItem(input)
     document.getElementById("outfit-item-name" + input).className = "outfit-item-name center-abs";
 }
 
+function enterEmployee(employee, employeeNumber)
+{
+    document.getElementById("employee-body" + employeeNumber).className = "center-abs employee-body animated fadeIn";
+    document.getElementById("employee-button" + employeeNumber).className = "employee-bottom-button animated fadeInUp";
+    document.getElementById("employee-head" + employeeNumber).className = "employee-overlay-title animated fadeInDown";
+    document.getElementById("employee-position" + employeeNumber).className = "employee-overlay-subtitle animated fadeIn";
+    
+    if(employee == "home")
+    {
+        document.getElementById("employee-title" + employeeNumber).className = "employee-title smaller-employee-title add-on-inactive";
+    }
+    else if(employee == "about")
+    {
+        document.getElementById("employee-title" + employeeNumber).className = "employee-title add-on-inactive";
+    }
+}
+
+function exitEmployee(employee, employeeNumber)
+{
+    document.getElementById("employee-body" + employeeNumber).className = "center-abs employee-body";
+    document.getElementById("employee-button" + employeeNumber).className = "employee-bottom-button";
+    document.getElementById("employee-head" + employeeNumber).className = "employee-overlay-title";
+    document.getElementById("employee-position" + employeeNumber).className = "employee-overlay-subtitle";
+
+    if(employee == "home")
+    {
+        document.getElementById("employee-title" + employeeNumber).className = "employee-title smaller-employee-title add-on-active";
+    }
+    else if(employee == "about")
+    {
+        document.getElementById("employee-title" + employeeNumber).className = "employee-title add-on-active";
+    }
+}
+
 function openNav(input)
 {
     if(!navOpened)

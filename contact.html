@@ -11,7 +11,7 @@
 
     <link rel = "stylesheet" href = "styles/style.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
  
     <!-- Swiper CSS --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
@@ -199,7 +199,7 @@
   
     <div class = "col col-5 max-width-form col-centered white delay1">
             <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
-            <label id = "form-option1" class="btn btn-primary outfit-button btn-primary cell-button wide-button" onclick = "selectForm('itemRequests')">
+            <label id = "form-option1" class="btn bootstrap-select btn-primary outfit-button btn-primary cell-button wide-button" onclick = "selectForm('itemRequests')">
                 <input type="radio" name="options" id="option1" autocomplete="off"> Item Requests
             </label>
             <label id = "form-option2" class="btn btn-primary outfit-button btn-primary cell-button selected-button wide-button" onclick = "selectForm('general')">
@@ -294,24 +294,28 @@
             </div>
         </div>
        <div class = "col col-12 col-md-4 text-center margin-top-medium">
-            <div id = "contact2" class = "contact-option-box contact2 delay2">
-                <i class="contact-option-icon fa fa-street-view" aria-hidden="true"></i>
-                <div class = "contact-option-text">
-                    <div class = "contact-option-header heavy">LEARN ABOUT US</div>
-                    <div class = "col col-md-11 col-lg-9 margin-top col-centered contact-option-body">Take a look at our favorite products at affordable prices.</div>
-                    <div id = "contact-arrow2" class = "contact-option-arrow medium-arrow contact-arrow2">&#8702;</div>
+           <a href = "about.html" class = "kill-link-style">
+                <div id = "contact2" class = "contact-option-box contact2 delay2">
+                    <i class="contact-option-icon fa fa-street-view" aria-hidden="true"></i>
+                    <div class = "contact-option-text">
+                        <div class = "contact-option-header heavy">LEARN ABOUT US</div>
+                        <div class = "col col-md-11 col-lg-9 margin-top col-centered contact-option-body">Take a look at our favorite products at affordable prices.</div>
+                        <div id = "contact-arrow2" class = "contact-option-arrow medium-arrow contact-arrow2">&#8702;</div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class = "col col-12 col-md-4 text-center margin-top-medium">
-            <div id = "contact3" class = "contact-option-box contact3 delay3">
-                <i class="contact-option-icon fa fa-support" aria-hidden="true"></i>
-                <div class = "contact-option-text">
-                    <div class = "contact-option-header heavy">CHARITABLE COMMITMENT</div>
-                    <div class = "col col-md-11 col-lg-9 margin-top col-centered contact-option-body">Take a look at our favorite products at affordable prices.</div>
-                    <div id = "contact-arrow3" class = "contact-option-arrow medium-arrow contact-arrow3">&#8702;</div>
+            <a href = "charity.html" class = "kill-link-style">
+                <div id = "contact3" class = "contact-option-box contact3 delay3">
+                    <i class="contact-option-icon fa fa-support" aria-hidden="true"></i>
+                    <div class = "contact-option-text">
+                        <div class = "contact-option-header heavy">CHARITABLE COMMITMENT</div>
+                        <div class = "col col-md-11 col-lg-9 margin-top col-centered contact-option-body">Take a look at our favorite products at affordable prices.</div>
+                        <div id = "contact-arrow3" class = "contact-option-arrow medium-arrow contact-arrow3">&#8702;</div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
 </div>
     </div>

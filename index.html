@@ -8,8 +8,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src gap://ready file://* *; 'font-src': 'data:'style-src 'self' http://* https://* 'unsafe-inline'; script-src 'self' http:// https:// 'unsafe-inline' 'unsafe-eval'">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: fonts.gstatic.com;">
     <link rel = "stylesheet" href = "styles/style.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -19,7 +17,7 @@
 
     <!-- Custom Code --> 
     
-    <script src="scrollreveal.min.js"></script>
+    <script src="scripts/scrollreveal.min.js"></script>
 
     <!-- Icon fonts --> 
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
@@ -325,7 +323,7 @@
             
     </div>
 
-    <div class = "section-two eliminate-bottom-padding fluid-container section-header center-rel text-center">
+    <div class = "section-two fluid-container section-header center-rel text-center">
     <span id = "start-page" class = "section-anchor redx">.</span>
     <div class = "small-section-text light-section-text center-rel">GET STARTED</div>
     <span class = "light">WHAT ARE YOU LOOKING FOR</span>
@@ -464,38 +462,90 @@
     </div>
     <div class = "col col-12 margin-top-large">
         <div class = "row">
-            <div class = "col col-12 col-md-4 text-center margin-top-medium">
-                <div class = "perks-box">
-                    <span class = "center-abs">
-                    <div>
-                        <img src = "images/_New/chat-white.svg" class = "perks-image" />
-                    </div>
-                    <span class = "perks-text">Free shipping on orders over $50</span>
-                    </span>
-                </div>
-                <!--<a href = "https://water.org/" target="_blank"><div class = "charity-name">Free shipping on order over 50 dollars</div></a>-->
-            </div>
-            <div class = "col col-12 col-md-4 text-center margin-top-medium">
-                <div class = "perks-box">
-                    <span class = "center-abs">
-                    <div>
-                        <img src = "images/_New/chat-white.svg" class = "perks-image" />
-                    </div>
-                    <span class = "perks-text">Money goes to charity with every purchase</span>
-                </div>
-                    </span>
-
-                <!--<a href = "https://www.actionagainsthunger.org/" target = "_blank"><div class = "charity-name">Action Against Hunger</div></a>-->
-            </div>
-            <div class = "col col-12 col-md-4 text-center margin-top-medium">
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
                 
-                <div class = "perks-box">
-                    <span class = "center-abs">
-                    <div>
-                        <img src = "images/_New/chat-white.svg" class = "perks-image" />
+                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('home', 1)" onmouseout="exitEmployee('home', 1)">
+                        <div class = "employee-overlay">
+                            <div id = "employee-head1" class = "employee-overlay-title">
+                                Zachary Jordan
+                            </div>
+                            <div id = "employee-position1" class = "employee-overlay-subtitle">
+                                Co-Founder
+                            </div>
+                            <div id = "employee-body1" class = "center-abs employee-body">
+                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
+                                 placeholder  placeholder  placeholder  placeholder  placeholder.
+                            </div>
+                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
+                                <div id = "employee-button1" class = "employee-bottom-button">
+                                    My Work
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class = "employee-pic zach-pic"></div>
+                    <div id = "employee-title1" class = "employee-title smaller-employee-title add-on-active">
+                    Free shipping <span class = "heavy">after $50</span>
                     </div>
-                    <span class = "perks-text">100% secure and simple checkout</span>
+                  
+                    
                 </div>
+                
+            </div>
+           <div class = "col col-12 col-md-4 text-center margin-top-large">
+                
+               
+                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('home', 2)" onmouseout="exitEmployee('home', 2)">
+                        <div class = "employee-overlay">
+                            <div id = "employee-head2" class = "employee-overlay-title">
+                                Zachary Jordan
+                            </div>
+                            <div id = "employee-position2" class = "employee-overlay-subtitle">
+                                Co-Founder
+                            </div>
+                            <div id = "employee-body2" class = "center-abs employee-body">
+                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
+                                 placeholder  placeholder  placeholder  placeholder  placeholder.
+                            </div>
+                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
+                                <div id = "employee-button2" class = "employee-bottom-button">
+                                    My Work
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class = "employee-pic water-charity-pic"></div>
+                    <div id = "employee-title2" class = "employee-title smaller-employee-title add-on-active">
+                    10% of profits <span class = "heavy">donated</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('home', 3)" onmouseout="exitEmployee('home', 3)">
+                        <div class = "employee-overlay">
+                            <div id = "employee-head3" class = "employee-overlay-title">
+                                Zachary Jordan
+                            </div>
+                            <div id = "employee-position3" class = "employee-overlay-subtitle">
+                                Co-Founder
+                            </div>
+                            <div id = "employee-body3" class = "center-abs employee-body">
+                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
+                                 placeholder  placeholder  placeholder  placeholder  placeholder.
+                            </div>
+                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
+                                <div id = "employee-button3" class = "employee-bottom-button">
+                                    My Work
+                                </div>
+                            </a>
+                        </div>
+                        <div class = "employee-pic zach-pic"></div>
+                    <div id = "employee-title3" class = "employee-title smaller-employee-title add-on-active">
+                    100% secure <span class = "heavy">checkout</span>
+                    </div>
+                </div>
+            </div>
                 </span>
                 </span>
             </div>
@@ -804,63 +854,6 @@
             
         </div>
     </div>
-</div>
-
-<div class = "footer-container fluid-container text-center">
- <div class = "center-footer-container text-center" style = "max-width:1100px;">
-         <a class="smooth-scroll" href = "#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
-         <div class = "col col-11 col-centered">  
-         <div class = "row">
-            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
-                
-                    <span class = "footer-header">SHOP</span>
-                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Women</a></div>
-                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Men</a></div>
-                    <div class = "footer-item"><a href = "#" class = "remove-link-style">All Categories</a></div>
-               
-            </div>
-            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
-               
-                <span class = "footer-header">LEARN</span>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
-                
-            </div>
-            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
-             
-                <span class = "footer-header">SUPPORT</span>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
-             
-            </div>
-            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
-                
-                <span class = "footer-header">Category FOUR</span>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
-                
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-            <div class = "footer-container-two text-center">
-                <div class = "col col-12 col-centered icon-container text-center">
-                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
-                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
-                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
-                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
-                </div>
-                <div class = "center-rel text-center">
-
-                <div class = "mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
-                <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
-                    <input name = "mail-list-email" class = "text-input" type = "text" placeholder = "Enter email" />
-                </form>
-                </div>
 </div>
                 
     <script src="scripts/tether.min.js"></script>

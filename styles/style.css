@@ -683,8 +683,9 @@ body
 
 .triangle-pic:hover
 {
-    -webkit-filter: brightness(70%); 
-    filter: brightness(70%);
+    top:-9vh;
+    -webkit-filter: brightness(50%); 
+    filter: brightness(50%);
     cursor:pointer;
 }
 
@@ -694,6 +695,7 @@ body
     -webkit-filter: brightness(100%); 
     filter: brightness(100%);
     width:100%;
+    margin-left:-5px;
     margin-top:-140px;
     text-align: center;
     color:#fff;
@@ -1054,8 +1056,6 @@ body
     animation-delay: .1s;
 }
 
-
-
 .section-header-image
 {
     display: block;
@@ -1067,8 +1067,20 @@ body
 
 .charity-bottom-pic
 {
-     background-position: center bottom;
+    background-position: center bottom;
     background-image:url("../images/_New/children-smiling.jpg");
+}
+
+.kade-pic
+{
+    background-position: center top;
+    background-image:url("../images/_New/kade.jpg");
+}
+
+.zach-pic
+{
+    background-position: center top;
+    background-image:url("../images/_New/zach.jpg");
 }
 
 .arrow-pic1
@@ -2420,15 +2432,26 @@ body {
     cursor:pointer;
 }
 
-.outfit-category
+.outfit-category-box
 {
-    display: inline-block;
     height:100px;
-    width:300px;
     line-height: 100px;
-    font-size:27px;
-    background-color:#e0ddd5;
+    font-size: 25px;
+    width:100%;
+    max-width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:24px;
+    background-color:#e0ddd6;
     transition: background-color .3s, color .3s, font-size .3s;
+}
+
+.outfit-category-box:hover
+{
+    cursor:pointer;
+    font-size:26px;
+    color:#fff;
+    background-color:#122846;
 }
 
 
@@ -2622,14 +2645,6 @@ body {
     height:100px;
     width:450px;
     background-color:#f6194b;
-}
-
-.outfit-category:hover
-{
-    cursor:pointer;
-    font-size:31px;
-    color:#fff;
-    background-color:#122846;
 }
 
 .selected-item
@@ -3358,6 +3373,123 @@ body {
     transition: background .3s, border .3s, font-size .3s;
 }
 
+.employee-overlay-title
+{
+    margin-top:25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.employee-overlay-subtitle
+{
+    font-weight: lighter;
+}
+
+.employee-body
+{
+    width:93%;
+    font-size: 14px;
+}
+
+.employee-overlay
+{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 9 !important;
+    background-color:#000;
+    opacity: 0;
+    height:100%;
+    width:100%;
+    transition: opacity .3s;
+}
+
+.employee-overlay:hover
+{
+    opacity: 0.7;
+}
+
+.employee-pic
+{
+    height:100%;
+    width:100%;
+    /*margin-top:3vh;*/
+    margin-left:auto;
+    margin-right:auto;
+    opacity: 0.88;
+    /*border-radius: 40vh;*/
+    background-size:cover;
+}
+
+.smaller-employee-title
+{
+    font-size:18px !important;
+}
+
+.employee-title
+{
+    font-size:28px;
+    width:80%;
+    height:55px;
+    line-height: 55px;
+    padding: 5px 5px 5px 5px;
+    background:rgb(243,32,79);
+    background:rgba(243,32,79, 0.8);
+    position: absolute;
+    bottom:60px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    transition: .3s;
+}
+
+.employee-bottom-button
+{
+    position: absolute;
+    width:180px;
+    height:50px;
+    line-height: 50px;
+    border:2px solid #fff;
+    bottom:60px;
+    color:#fff;
+    opacity: 1 !important;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    transition: background .3s, border .3s;
+}
+
+.employee-bottom-button:hover
+{
+    background:rgb(252,16,83);
+    border: 2px solid #fc1053
+}
+
+.employee-box
+{
+    position: relative;
+    width:25vw;
+    display: inline-block;
+    font-size: 22px;
+    height:67vh;
+    width:310px;
+    border: 2px solid #fff;
+    color:#fff;
+    letter-spacing: 1.6px;
+    font-weight: lighter;
+    background: transparent;
+    top:0;
+    transition: border .3s, top .3s;
+}
+
+.employee-box:hover
+{
+    top:-5px;
+    border: 2px solid transparent;
+}
+
 .charity-name
 {
     display: inline-block;
@@ -3469,6 +3601,11 @@ body {
     height:63px !important;
     font-size:17px !important;
     transition: background-color .3s, font-size .3s !important;
+}
+
+.push-red-button-down
+{
+    margin-top:90px;
 }
 
 .outfit-change-button:hover
@@ -3650,6 +3787,30 @@ body {
 }
 
 /* Helper classes */ 
+
+    .btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none !important;
+}
+
+.bootstrap-select .btn:focus {
+    outline: none !important;
+}
+
+    .transparent-border
+    {
+        -moz-background-clip: border;     /* Firefox 3.6 */
+    -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
+    background-clip: border-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+                    
+    -moz-background-clip: padding;     /* Firefox 3.6 */
+    -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+    background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+                    
+    -moz-background-clip: content;     /* Firefox 3.6 */
+    -webkit-background-clip: content;  /* Safari 4? Chrome 6? */
+    background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+    }
 
     input::-webkit-input-placeholder {
 	color: #D3D3D3 !important;
@@ -3896,6 +4057,11 @@ body {
     padding-bottom: 3px;
 }
 
+.large-slide-text
+{
+    font-size:100px;
+}
+
 .light-card
 {
     background-color:#e0ddd6 !important;
@@ -4036,6 +4202,14 @@ body {
     margin-bottom: 10px;
     height:55px;
     width:55px;
+}
+
+.red-button-max-width
+{
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+    max-width:710px !important;       
 }
 
 .icon-text
@@ -4191,6 +4365,30 @@ body {
 and (min-width : 320px) 
 and (max-width : 568px)
 {
+
+    .outfit-category-box
+    {
+        max-width: none !important;
+        height:110px;
+        line-height: 110px;
+        font-size:27px !important;
+    }
+
+    .outfit-category-box:hover
+    {
+        font-size:29px !important;
+    }
+
+
+    .employee-box
+    {
+        width:80vw;
+    }
+
+    .employee-title
+    {
+        font-size:6vw;
+    }
     
     .branding-tag
     {
@@ -4290,6 +4488,19 @@ and (min-width : 100px)
 and (max-width : 667px)
 {
 
+    .outfit-category-box
+    {
+        max-width: 90% !important;
+        height:110px;
+        line-height: 110px;
+        font-size:30px;
+    }
+
+    .outfit-category-box:hover
+    {
+        font-size:33px;
+    }
+
     .form-adjustment
     {
         margin-bottom:-4px;
@@ -4373,7 +4584,7 @@ and (max-width : 667px)
 
     .slide-text
     {
-        font-size: 40px !important;
+        font-size: 40px;
     }
 
   .max-width-social
@@ -4439,6 +4650,41 @@ and (max-width : 667px)
 and (min-device-width : 414px) 
 and (max-device-width : 736px)  { 
 
+    .employee-box
+    {
+        width:90vw;
+    }
+
+    .employee-bottom-button
+    {
+        height:65px;
+        line-height: 65px;
+        font-size:21px;
+        width:250px;
+    }
+
+    .employee-body
+    {
+        font-size:17px;
+    }
+
+    .employee-title
+    {
+        font-size:26px;
+        line-height: 70px !important;
+        height: 70px;
+    }
+
+    .employee-overlay-title
+    {
+        font-size:28px;
+    }
+
+    .employee-overlay-subtitle
+    {
+        font-size:23.5px;
+    }
+
     .contact-option-box
     {
         height:280px !important;
@@ -4494,9 +4740,22 @@ and (min-width: 678px)
 and (max-width: 767px)
 {
 
+    .outfit-category-box
+    {
+        max-width: 88%;
+        height:115px;
+        line-height: 115px;
+        font-size:35px;
+    }
+
+    .outfit-category-box:hover
+    {
+        font-size:37px;
+    }
+
     .slide-text
     {
-        font-size: 50px !important;
+        font-size: 50px;
     }
 
     .max-width-social
@@ -4582,6 +4841,20 @@ and (max-width : 887px)
         left:-7px;
         width:209px !important;
     } 
+    
+    .outfit-category-box
+{
+    height:100px;
+    line-height: 100px;
+    font-size: 25px;
+    width:100%;
+    max-width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:24px;
+    background-color:#e0ddd6;
+    transition: background-color .3s, color .3s, font-size .3s;
+}
 
 }
 
@@ -4590,7 +4863,29 @@ and (max-width : 887px)
 and (min-width : 768px) 
 and (max-width : 880px)
 { 
+    
+    .large-slide-text
+    {
+        font-size:90px !important;
+    }
 
+    .employee-box
+    {
+        width:100%;
+    }
+
+    .employee-title
+    {
+        height:70px;
+        font-size:15px !important;
+        line-height: 70px;
+        width:93%;
+    }
+
+    .larger-employee-title
+    {
+        font-size:23px !important
+    }
 
     .max-width-ipad
     {
@@ -4631,15 +4926,15 @@ and (max-width : 880px)
     
     .item-button
     {
-        height:77px;
-        line-height: 77px;
+        height:70px;
+        line-height: 70px;
         font-size:25px;
-        width:270px;
+        width:260px;
     }
 
     .item-button:hover
     {
-        font-size:28px;
+        font-size:27px;
     }
 
     .charity-options-card
@@ -4760,7 +5055,7 @@ and (max-width : 880px)
 
     .slide-text
     {
-        font-size: 55px !important;
+        font-size: 55px;
     }
 
     .contact-option-box
@@ -4877,13 +5172,28 @@ and (max-width : 880px)
 }
 
 @media only screen
+and (min-width:857px)
+{
+    .outfit-category-box
+    {
+        font-size: 28px;
+        transition: background-color .3s, color .3s, font-size .3s;
+    }
+
+    .outfit-category-box:hover
+    {
+        font-size:30px;
+    }
+}
+
+@media only screen
 and (min-width: 881px)
 and (max-width: 1000px)
 {
 
     .slide-text
     {
-        font-size: 60px !important;
+        font-size: 60px;
     }
 
     .triangle-pic
@@ -4993,6 +5303,16 @@ and (max-width: 980px)
 and (min-width: 881px)
 and (max-width: 1150px)
 {
+
+    .employee-box
+    {
+        width:265px;
+    }
+
+    .employee-title
+    {
+        font-size:15px !important;
+    }
 
     .contact-option-box
     {
@@ -5191,9 +5511,120 @@ and (max-width: 1559px)
     }
 }
 
+
+/* Larger Monitor */ 
 @media only screen 
 and (min-width: 1560px)
 {
+
+    .category-item-button
+    {
+        height:110px;
+        width:70%;
+        line-height: 110px;
+        font-size:32px;
+    }
+
+    .category-item-button-small
+    {
+        width:80%;
+        height:80px;
+        line-height: 80px;
+        font-size:22px !important;
+    }
+    
+
+    .max-width-categories
+    {
+        max-width:95vw !important;
+    }
+
+    .navbar-brand
+    {
+        font-size:35px !important;
+    }
+    
+    .nav-link
+    {
+        font-size:19px;
+    }
+
+    .small-section-text
+    {
+        font-size:16px;
+    }
+
+    .chart-card-header
+    {
+        font-size:23px;
+    }
+    
+    .small-text
+    {
+        font-size:20px;
+    } 
+
+    .charity-name
+    {
+        font-size:23;
+    }
+
+
+
+    .header-circle
+    {
+         height:55px;
+         width:55px;
+         line-height: 55px;
+         border-radius: 55px;
+         font-size:30px;
+    }
+
+    .employee-box
+    {
+        width: 25vw;
+    }
+
+    .section-header
+    {
+        font-size:53px;
+    }
+
+    .employee-overlay-title
+    {   
+        font-size:35px;
+    }
+
+    .employee-overlay-subtitle
+    {
+        font-size:30px;
+    }
+
+    .employee-body
+    {
+        font-size:19px;
+    }
+
+    .employee-title
+    {
+        height:80px;
+        line-height: 80px;
+        font-size:35px;
+    }
+
+    .employee-bottom-button
+    {
+        height:70px;
+        width:200px;
+        line-height: 70px;
+        font-size:18px;
+    }
+
+    .base-text-size
+    {
+        font-size:21.5px;
+    }
+
     .max-width-outfits
     {
         max-width:1500px !important;
